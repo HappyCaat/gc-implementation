@@ -12,6 +12,7 @@ public class GarbageCollectorImplementation implements GarbageCollector {
   public List<ApplicationBean> collect(HeapInfo heap, StackInfo stack) {
     Map<String, ApplicationBean> beans = heap.getBeans();
     Deque<StackInfo.Frame> frames = stack.getStack();
+
     return new ArrayList<>();
   }
 

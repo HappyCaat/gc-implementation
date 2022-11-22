@@ -19,5 +19,10 @@ public class ApplicationBean {
     fieldValues.put(fieldName, relation);
   }
 
-
+  @Override
+  public String toString() {
+    return "ApplicationBean{" +
+            "fieldValues=" + fieldValues +
+            '}';
+  }
 }

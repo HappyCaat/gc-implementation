@@ -31,6 +31,8 @@ class GarbageCollectorImplementationTest {
 
         // WHEN
         final List<ApplicationBean> actualGarbage = gc.collect(heapInfo, stack);
+        System.out.println(expectedGarbage);
+        System.out.println(actualGarbage);
 
         // THEN
         Assertions.assertEquals(expectedGarbage.size(), actualGarbage.size());
